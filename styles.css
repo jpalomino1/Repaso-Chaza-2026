@@ -23,18 +23,29 @@ footer{
 }
 .producto{
     width: 25% ;
-    height: 100px ;
+    height: 150px ;
     background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 15px -5px black;
     position: relative;
+    span{
+        padding: auto;
+    }
+    
     button{
         width: 100%;
         position: absolute;
         bottom: 0;
 
+    }
+    img{
+        position: absolute;
+        height: 25% ;
+        width: 100%;
+        padding: 0 0 0 15px;
+        
     }
     
 }
