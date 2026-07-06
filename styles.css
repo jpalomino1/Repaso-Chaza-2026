@@ -1,30 +1,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+:root{
+    --colorPrincipal: black;
+}
 body{
   font-family: "Noto Sans", sans-serif;
 
 }
 .col25{
+    margin: 10px 0px 0px 0px;
     width: 25% ;
-    background-color: red;
+    background-color: var(--colorPrincipal);
+    color: white;
     
 }
 footer{
     display: flex;
-    gap: 5px;
+
 }
 .productos{
-    padding: 15px;
+    width: 100%;
     display: flex;
     gap: 10px;
-    border: dashed 1px blue;
 }
 .producto{
     width: 25% ;
     height: 150px ;
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,16 +37,19 @@ footer{
     }
     
     button{
-        width: 100%;
+        width: 80%;
         position: absolute;
-        bottom: 0;
+        bottom: 2px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
 
     }
     img{
         position: absolute;
-        height: 25% ;
+        height: 50% ;
         width: 100%;
-        padding: 0 0 0 15px;
+
         
     }
     
@@ -52,4 +57,22 @@ footer{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    .shop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+h3{
+    display:flex ;
+    justify-content: center
+}
+.Pagina{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 100%;
+    }
 }
